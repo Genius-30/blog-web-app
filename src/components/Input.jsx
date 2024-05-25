@@ -1,4 +1,4 @@
-import React, { useId } from "react";
+import React, { forwardRef, useId } from "react";
 
 function Input({ label, type = "text", className = "", ...props }, ref) {
   const id = useId();
@@ -20,4 +20,4 @@ function Input({ label, type = "text", className = "", ...props }, ref) {
   );
 }
 
-export default React.forwardRef(Input);
+export default forwardRef(Input);
